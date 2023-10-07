@@ -3,3 +3,55 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    padding: 40px;
+    background-color: blanchedalmond;
+}
+section {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(1fr,1fr));
+    grid-template-rows: 3rem auto;
+    gap: 1.5rem;
+
+}
+.S-d {
+    display: flex;
+    border: 1px black solid;
+    border-radius: 40px;
+    max-height: 500px;
+    background-color: cadetblue;
+}
+.S-d1 {
+    grid-area: 2 / 1 / 3 / 2;
+    justify-content: center;
+    align-items: center;
+
+}
+.S-d2{
+    grid-area: 2 / 2 / 3 / 3;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+}
+img {
+    object-fit: fill;
+    border-radius: inherit;
+    border: inherit;
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 1;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin: 1.5rem;
+    color: deepskyblue;
+}
+h4{
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
